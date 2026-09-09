@@ -1,0 +1,24 @@
+{
+  "name": "elur-devtools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Official browser DevTools for the elur ecosystem (extension + in-page backend + protocol).",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "package:extension": "node scripts/package-extension.mjs",
+    "release:extension": "npm run typecheck -w @elurjs/devtools-extension && npm run build -w @elurjs/devtools-extension && npm run package:extension"
+  },
+  "devDependencies": {
+    "typescript": "~7.0.2"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

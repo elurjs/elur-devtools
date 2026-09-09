@@ -1,0 +1,24 @@
+{
+  "name": "@elurjs/devtools-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser extension (MV3) for the elur DevTools. Build with `npm run build`, then load `dist/` as an unpacked extension.",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run --environment happy-dom"
+  },
+  "dependencies": {
+    "@elurjs/core": "file:../../../elur-core",
+    "@elurjs/devtools-protocol": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "latest",
+    "happy-dom": "^20.12.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0",
+    "vitest": "^4.1.11"
+  }
+}

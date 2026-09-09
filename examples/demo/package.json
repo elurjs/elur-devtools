@@ -1,0 +1,20 @@
+{
+  "name": "elur-devtools-demo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@elurjs/core": "file:../../../elur-core",
+    "@elurjs/devtools-backend": "0.1.0",
+    "@elurjs/query": "file:../../../elur-query"
+  },
+  "devDependencies": {
+    "@elurjs/vite-plugin-elur": "file:../../../vite-plugin-elur",
+    "vite": "^8.0.0"
+  }
+}

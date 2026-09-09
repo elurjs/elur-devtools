@@ -1,0 +1,41 @@
+{
+  "name": "@elurjs/devtools-backend",
+  "version": "0.1.0",
+  "description": "In-page devtools backend for elur: hooks into the core debug APIs and streams state to the browser extension.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./auto": {
+      "types": "./dist/auto.d.ts",
+      "import": "./dist/auto.js",
+      "default": "./dist/auto.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@elurjs/core": ">=3.5.0"
+  },
+  "dependencies": {
+    "@elurjs/devtools-protocol": "0.1.0"
+  },
+  "devDependencies": {
+    "@elurjs/core": "file:../../../elur-core",
+    "happy-dom": "^20.8.3",
+    "typescript": "~5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
