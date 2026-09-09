@@ -33,7 +33,7 @@
     "@elurjs/devtools-protocol": "0.1.0"
   },
   "devDependencies": {
-    "@elurjs/core": "file:../../../elur-core",
+    "@elurjs/core": "^3.6.2",
     "happy-dom": "^20.8.3",
     "typescript": "~7.0.2",
     "vitest": "^4.0.18"
