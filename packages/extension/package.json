@@ -11,7 +11,7 @@
     "test": "vitest run --environment happy-dom"
   },
   "dependencies": {
-    "@elurjs/core": "^3.6.2",
+    "@elurjs/core": "^4.0.1",
     "@elurjs/devtools-protocol": "0.1.0"
   },
   "devDependencies": {
